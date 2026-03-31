@@ -1,0 +1,17 @@
+name: ccq-scenario-trainer
+options:
+  bundleIdPrefix: com.example
+configs:
+  Debug: debug
+  Release: release
+targets:
+  ccq-scenario-trainer:
+    type: application
+    platform: iOS
+    deploymentTarget: "16.0"
+    sources:
+      - path: src
+    resources: []
+    settings:
+      INFO_PLIST_FILE: Config/Info.plist
+      SWIFT_VERSION: "5.7"
