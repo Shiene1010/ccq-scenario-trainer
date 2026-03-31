@@ -1,0 +1,125 @@
+/* Stitch Design System - Global Styles */
+
+:root {
+  --stitch-bg: #f8fafc;
+  --stitch-card-bg: #ffffff;
+  --stitch-primary: #2ac3de;
+  --stitch-text: #1a1b26;
+  --stitch-border: #e2e8f0;
+  --stitch-success: #10b981;
+  --stitch-error: #ef4444;
+  --stitch-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+}
+
+body {
+  margin: 0;
+  font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  background-color: var(--stitch-bg);
+  color: var(--stitch-text);
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+#root {
+  width: 100%;
+  max-width: 600px;
+  padding: 2rem;
+}
+
+.stitch-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* Stitched Card Effect */
+.stitch-card {
+  background: var(--stitch-card-bg);
+  border: 2px dashed var(--stitch-border);
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: var(--stitch-shadow);
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.stitch-card:hover {
+  border-color: var(--stitch-primary);
+}
+
+.target-expression {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--stitch-primary);
+  margin-bottom: 0.5rem;
+  display: block;
+  text-align: center;
+}
+
+.scenario-text {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: var(--stitch-text);
+  margin-bottom: 2rem;
+}
+
+.button-group {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.stitch-button {
+  flex: 1;
+  padding: 1rem;
+  border-radius: 12px;
+  border: 1px solid var(--stitch-border);
+  background: var(--stitch-card-bg);
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.stitch-button:hover {
+  background: var(--stitch-bg);
+  border-color: var(--stitch-primary);
+  color: var(--stitch-primary);
+}
+
+.stitch-button.primary {
+  background: var(--stitch-primary);
+  color: white;
+  border: none;
+}
+
+.stitch-button.primary:hover {
+  opacity: 0.9;
+}
+
+.feedback {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  border-radius: 12px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.feedback.correct {
+  background-color: #d1fae5;
+  color: var(--stitch-success);
+  border: 1px solid var(--stitch-success);
+}
+
+.feedback.incorrect {
+  background-color: #fee2e2;
+  color: var(--stitch-error);
+  border: 1px solid var(--stitch-error);
+}
+
+.score-display {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--stitch-primary);
+}
