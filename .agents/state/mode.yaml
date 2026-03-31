@@ -1,0 +1,6 @@
+project_name: My First App
+project_slug: my-first-app
+mode: works-now
+reason: "Initial default mode"
+selected_workflow: start-project
+last_updated: 2026-03-31

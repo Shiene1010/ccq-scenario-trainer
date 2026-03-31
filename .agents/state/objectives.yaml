@@ -1,0 +1,9 @@
+current_objective:
+  id: OBJ-01
+  title: "Deliver the first milestone for My First App"
+  description: "Implement the initial project slice and validate it."
+  scope:
+    - "Core flow"
+    - "Basic data handling"
+    - "Acceptance criteria"
+  status: active
